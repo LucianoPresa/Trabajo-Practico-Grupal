@@ -3,7 +3,7 @@
 --color-secundario: orange;
 --color-acento: navy;
 --color-fondo: antiquewhite;
---color-fondo-secundario: orange;
+--color-fondo-secundario: rgb(250, 174, 34);
 --color-texto: maroon;
 }
 
@@ -37,3 +37,44 @@ p{
     text-align: center;
 }
 
+header {
+    background-color: var(--color-fondo-secundario);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-acento);
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-fondo);
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--color-texto);
+}
