@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
-    <link rel=stylesheet href=css/estilos.css>
+    <link rel="stylesheet" href="css/estilos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - ONG Huellitas Solidarias</title>
   </head>
@@ -19,6 +22,7 @@
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
+
     <main>
       <section>
         <h2>Ponete en contacto con nosotros</h2>
@@ -27,22 +31,49 @@
         </p>
         <p>
           ¿Queres colaborar activamente siendo voluntario, adoptando o realizar
-          una donacion? ¡Escribinos!
+          una donacion?
         </p>
 
         <ul>
-          <li><strong>Direccion</strong> Roma 901, Hurlingham, Buenos Aires</li>
           <li>
-            <strong>Telefono</strong>
-            <a href="tel: +54911668742">+54911668742</a>
+            <strong>Direccion:</strong> Roma 901, Hurlingham, Buenos Aires
           </li>
           <li>
-            <strong>Email</strong>
-            <a href="mailto:contacto@huellitas.org">
-              mailto:contacto@huellitas.org</a
-            >
+            <strong>Telefono:</strong>
+            <a href="tel:+54911668742">+549 1166 8742</a>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:contacto@huellitas.org">contacto@huellitas.org</a>
           </li>
         </ul>
+      </section>
+
+      <section id="formulario">
+        <h2>Escribinos</h2>
+        <p>Completá el formulario y te responderemos a la brevedad.</p>
+        <br />
+
+        <form action="#" method="post">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <br />
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="motivo">Motivo del contacto</label>
+          <select id="motivo" name="motivo">
+            <option value="">Elegí una opción...</option>
+            <option value="adoptar">Quiero adoptar</option>
+            <option value="voluntario">Quiero ser voluntario</option>
+            <option value="donar">Quiero hacer una donación</option>
+          </select>
+          <br />
+          <label for="mensaje">Tu mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
       </section>
 
       <section id="redes">
@@ -73,6 +104,7 @@
         </ul>
       </section>
     </main>
+
     <footer>
       <p>Huellitas Solidarias - Copyright © 2026</p>
     </footer>
