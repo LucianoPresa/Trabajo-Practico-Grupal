@@ -1,3 +1,4 @@
+/*Variables*/
 :root {
 --color-primario: floralwhite;
 --color-secundario: orange;
@@ -6,7 +7,7 @@
 --color-fondo-secundario: rgb(250, 174, 34);
 --color-texto: maroon;
 }
-
+/*reset*/
 * {
     box-sizing: border-box; 
     margin: 0;
@@ -14,9 +15,8 @@
 }
 img {
     max-width: 100%;
-    
 }
-
+/*Body*/
 body{
     color: var(--color-texto) ;
     background-color: var(--color-fondo);
@@ -36,13 +36,13 @@ h2, h3 {
 p{
     text-align: center;
 }
-
+/*Header*/ 
 header {
     background-color: var(--color-fondo-secundario);
     padding: 1.5rem;
     text-align: center;
 }
-
+/*Navbar*/
 nav {
     margin-top: 1rem;
     padding: 1rem;
@@ -60,7 +60,7 @@ nav a {
 nav a:hover {
     color: var(--color-fondo);
 }
-
+/*Footer*/
 footer {
     background-color: var(--color-secundario);
     color: var(--color-primario);
@@ -77,4 +77,91 @@ footer a {
 
 footer a:hover {
     color: var(--color-texto);
+}
+/*Section*/
+section {
+    background-color: var(--color-fondo);
+    padding: 75px;
+    margin: 50px;
+    justify-content: center;
+    box-align: center;
+    flex-wrap: wrap;
+    display: contents;
+    align-items: center;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+article{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.Sobre-Nosotros,
+.Nuestra-Historia{
+    display: flex;
+    align-items: center;
+
+}
+
+.Nuestra-Historia{
+flex-direction: row-reverse;
+
+}
+
+.Nuestra-Historia article,
+.Sobre-Nosotros article{
+    flex: 2;
+}
+
+.Sobre-Nosotros div,
+.Nuestra-Historia div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Sobre-Nosotros img, 
+.Nuestra-Historia img{
+    max-width: 300px;
+    height: auto;
+    box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.Equipo ol{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.Valores-Y-Compromisos article{
+    flex: 2;
+}
+
+.Valores-Y-Compromisos ul{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 60px;
+    padding: 20px;
+}
+
+.Equipo img{
+    max-width: 100%;
 }
