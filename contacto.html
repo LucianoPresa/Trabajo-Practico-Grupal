@@ -8,105 +8,221 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/estilos.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - ONG Huellitas Solidarias</title>
   </head>
   <body>
     <header>
       <h1>Huellitas Solidarias</h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="programa.html">Programa</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> Huellitas Solidarias </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="programa.html">Programa</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-
+    <img
+      src="./Imagenes/Contacto/Perrito-hdr.jpg"
+      alt="Img de perrito con cartel de adopcion"
+      class="banner"
+    />
     <main>
-      <section>
+      <section class="container text-center mt-5 mb-2">
         <h2>Ponete en contacto con nosotros</h2>
         <p>
-          <a href="#redes"> ¡Visita todas nuestras redes sociales! </a>
+          <a href="#redes" class="text-decoration-none text-dark fw-bold">
+            ¡Visita todas nuestras redes sociales!
+          </a>
         </p>
-        <p>
+        <p class="mb-2">
           ¿Queres colaborar activamente siendo voluntario, adoptando o realizar
           una donacion?
         </p>
 
-        <ul>
-          <li>
-            <strong>Direccion:</strong> Roma 901, Hurlingham, Buenos Aires
-          </li>
-          <li>
-            <strong>Telefono:</strong>
-            <a href="tel:+54911668742">+549 1166 8742</a>
-          </li>
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:contacto@huellitas.org">contacto@huellitas.org</a>
-          </li>
-        </ul>
+        <dl class="m-0 p-0 mt-3">
+          <div class="mb-2">
+            <dt class="d-inline fs-6">Direccion:</dt>
+            <dd class="d-inline m-0">Roma 901, Hurlingham, Buenos Aires</dd>
+          </div>
+
+          <div class="mb-2">
+            <dt class="d-inline fs-6">Telefono:</dt>
+            <dd class="d-inline m-0">
+              <a href="tel:+54911668742" class="text-decoration-none text-dark"
+                >+549 1166 8742</a
+              >
+            </dd>
+          </div>
+
+          <div>
+            <dt class="d-inline fs-6">Email:</dt>
+            <dd class="d-inline m-0">
+              <a
+                href="mailto:contacto@huellitas.org"
+                class="text-decoration-none text-dark"
+                >contacto@huellitas.org</a
+              >
+            </dd>
+          </div>
+        </dl>
       </section>
+      <section
+        id="formulario"
+        class="container mt-2 mb-5"
+        style="max-width: 600px"
+      >
+        <div class="card shadow-sm position-relative">
+          <div class="etiqueta-flotante">¡Respondemos a la brevedad!</div>
 
-      <section id="formulario">
-        <h2>Escribinos</h2>
-        <p>Completá el formulario y te responderemos a la brevedad.</p>
-        <br />
+          <div class="card-body p-4 text-start">
+            <h2 class="text-center">Escribinos</h2>
+            <p class="text-center mb-4">
+              Completá el formulario y te responderemos a la brevedad.
+            </p>
 
-        <form action="#" method="post">
-          <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" required />
-          <br />
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="motivo">Motivo del contacto</label>
-          <select id="motivo" name="motivo">
-            <option value="">Elegí una opción...</option>
-            <option value="adoptar">Quiero adoptar</option>
-            <option value="voluntario">Quiero ser voluntario</option>
-            <option value="donar">Quiero hacer una donación</option>
-          </select>
-          <br />
-          <label for="mensaje">Tu mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <form action="#" method="post">
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-bold"
+                  >Nombre completo</label
+                >
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="form-control"
+                  required
+                />
+              </div>
 
-          <button type="submit">Enviar mensaje</button>
-        </form>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="motivo" class="form-label fw-bold"
+                  >Motivo del contacto</label
+                >
+                <select id="motivo" name="motivo" class="form-select" required>
+                  <option value="">Elegí una opción...</option>
+                  <option value="adoptar">Quiero adoptar</option>
+                  <option value="voluntario">Quiero ser voluntario</option>
+                  <option value="donar">Quiero hacer una donación</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-bold"
+                  >Tu mensaje</label
+                >
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 fw-bold">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
-
-      <section id="redes">
+      <section id="redes" class="container text-center mt-1 mb-5">
         <h2>Nuestras Redes sociales</h2>
-        <p>
+        <p class="mb-4">
           Seguinos para que la comunidad siga creciendo y lleguemos a mas
           personas que puedan colaborar y visibilizando nuestra problematica
         </p>
-        <ul>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Seguinos en Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.Facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Seguinos en Facebook
-            </a>
-          </li>
-        </ul>
+
+        <div class="d-flex justify-content-center gap-3">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn fw-bold px-4 py-2 rounded-pill"
+            style="background-color: #fca311; color: #fff"
+          >
+            Seguinos en Instagram
+          </a>
+
+          <a
+            href="https://www.Facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn fw-bold px-4 py-2 rounded-pill"
+            style="background-color: #fca311; color: #fff"
+          >
+            Seguinos en Facebook
+          </a>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>Huellitas Solidarias - Copyright © 2026</p>
+      <p>2026 Huellitas Solidarias - Todos los derechos reservados</p>
+
+      <p>
+        Organización sin fines de lucro dedicada al rescate y protección animal.
+      </p>
+
+      <p>
+        Contacto:
+        <a href="mailto:contacto@huellitas.org">contacto@huellitas.org</a>
+      </p>
+
+      <p>
+        Seguinos:
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </p>
     </footer>
   </body>
 </html>

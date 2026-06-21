@@ -192,10 +192,7 @@ ul{
 }
 
 .nav-link:hover {
-    color: var(--color-secundario) !important;
-}
-.navbar {
-    background-color: var(--color-fondo-secundario);
+    color: #fff !important; 
 }
 
 .card {
@@ -209,4 +206,53 @@ ul{
 
 .card-title {
     color: var(--color-acento);
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 20%; 
+    display: block;
+    margin-top: -1.5rem; 
+}
+
+/* ========================================= 
+    Sección Contacto - Integrante 4           
+   ========================================= */
+
+
+/* ========================================= */
+/* Sección Contacto - Integrante 4           */
+/* ========================================= */
+
+.etiqueta-flotante {
+    position: absolute;
+    top: -15px; 
+    right: 20px; 
+    background-color: #ffc107; 
+    color: #fff; 
+    padding: 8px 20px;
+    border-radius: 30px; 
+    font-weight: bold;
+    z-index: 10; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.etiqueta-flotante:hover {
+    background-color: #8b0000; 
+    color: #ffffff; 
+}
+
+#formulario .btn-primary {
+    background-color: #fca311; 
+    border-color: #fca311;
+    color: #fff; 
+}
+
+#formulario .btn-primary:hover {
+    background-color: #e5940f; 
+    border-color: #e5940f;
 }
