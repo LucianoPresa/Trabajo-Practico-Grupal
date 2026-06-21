@@ -83,11 +83,6 @@ section {
     background-color: var(--color-fondo);
     padding: 75px;
     margin: 50px;
-    justify-content: center;
-    box-align: center;
-    flex-wrap: wrap;
-    display: contents;
-    align-items: center;
 }
 
 main {
@@ -164,4 +159,54 @@ ul{
 
 .Equipo img{
     max-width: 100%;
+}
+/* =========================
+   Bootstrap Personalizado
+========================= */
+
+.btn-primary {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-texto);
+    border-color: var(--color-texto);
+    transition: 0.3s;
+}
+
+/* =========================
+    Navbar Bootstrap
+========================= */
+.navbar {
+    background-color: var(--color-fondo-secundario);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--color-secundario) !important;
+}
+.navbar {
+    background-color: var(--color-fondo-secundario);
+}
+
+.card {
+    border: 2px solid var(--color-secundario);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--color-acento);
 }
