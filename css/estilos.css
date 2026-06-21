@@ -128,14 +128,6 @@ flex-direction: row-reverse;
     border-radius: 12px;
 }
 
-.Equipo ol{
-    display:flex;
-    align-items: center;
-    list-style: none;
-    flex-wrap: wrap;
-
-}
-
 .Valores-Y-Compromisos article{
     flex: 2;
 }
@@ -157,9 +149,34 @@ ul{
     padding: 20px;
 }
 
-.Equipo img{
-    max-width: 100%;
+.equipo-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
+
+
+.miembro {
+    display: flex;
+    flex-direction: column-reverse; /* Esto pone el dt (nombre) debajo del dd (imagen) */
+    align-items: center;
+}
+
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+}
+
+.rescatistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
 /* =========================
    Bootstrap Personalizado
 ========================= */
