@@ -81,8 +81,8 @@ footer a:hover {
 /*Section*/
 section {
     background-color: var(--color-fondo);
-    padding: 75px;
-    margin: 50px;
+    padding: 20px 0;
+    margin: 20px 0;
 }
 
 main {
@@ -128,6 +128,14 @@ flex-direction: row-reverse;
     border-radius: 12px;
 }
 
+.Equipo ol{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
 .Valores-Y-Compromisos article{
     flex: 2;
 }
@@ -142,41 +150,16 @@ flex-direction: row-reverse;
     margin-bottom: 20px;
 }
 
-ul{
+ul {
     list-style: none;
-    flex-wrap: wrap;
-    margin: 60px;
-    padding: 20px;
+    padding-left: 0; 
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-.equipo-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.Equipo img{
+    max-width: 100%;
 }
-
-
-.miembro {
-    display: flex;
-    flex-direction: column-reverse; /* Esto pone el dt (nombre) debajo del dd (imagen) */
-    align-items: center;
-}
-
-
-.miembro img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px; /* Espacio entre imagen y texto */
-}
-
-.rescatistas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
 /* =========================
    Bootstrap Personalizado
 ========================= */
@@ -209,7 +192,10 @@ ul{
 }
 
 .nav-link:hover {
-    color: #fff !important; 
+    color: var(--color-secundario) !important;
+}
+.navbar {
+    background-color: var(--color-fondo-secundario);
 }
 
 .card {
@@ -223,53 +209,12 @@ ul{
 
 .card-title {
     color: var(--color-acento);
-}
-
-.banner {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center 20%; 
+    font-size: 1.5rem;
     display: block;
-    margin-top: -1.5rem; 
+    margin-bottom: 0.75rem;
 }
-
-/* ========================================= 
-    Sección Contacto - Integrante 4           
-   ========================================= */
-
-
-/* ========================================= */
-/* Sección Contacto - Integrante 4           */
-/* ========================================= */
-
-.etiqueta-flotante {
-    position: absolute;
-    top: -15px; 
-    right: 20px; 
-    background-color: #ffc107; 
-    color: #fff; 
-    padding: 8px 20px;
-    border-radius: 30px; 
-    font-weight: bold;
-    z-index: 10; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-}
-
-.etiqueta-flotante:hover {
-    background-color: #8b0000; 
-    color: #ffffff; 
-}
-
-#formulario .btn-primary {
-    background-color: #fca311; 
-    border-color: #fca311;
-    color: #fff; 
-}
-
-#formulario .btn-primary:hover {
-    background-color: #e5940f; 
-    border-color: #e5940f;
+.banner {
+    width: 100%;    
+    height: auto;   
+    display: block; 
 }
