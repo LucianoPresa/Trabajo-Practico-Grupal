@@ -99,7 +99,7 @@ article{
 #Sobre-Nosotros,
 #Nuestra-Historia{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     align-items: center;
     padding: 2rem;
 
@@ -134,6 +134,11 @@ flex-direction: row-reverse;
 #Nuestra-Historia p{
     text-align: justify;
 }
+
+#Valores-Y-Compromisos .card-title {
+    text-align: center;
+}
+
 
 #Equipo dl{
     display:flex;
