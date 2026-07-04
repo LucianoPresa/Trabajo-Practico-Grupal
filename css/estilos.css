@@ -96,58 +96,51 @@ article{
     line-height: 1.5;
 }
 
-.Sobre-Nosotros,
-.Nuestra-Historia{
+#Sobre-Nosotros,
+#Nuestra-Historia{
     display: flex;
     align-items: center;
+    align-items: center;
+    padding: 2rem;
 
 }
 
-.Nuestra-Historia{
+#Nuestra-Historia{
 flex-direction: row-reverse;
 
 }
 
-.Nuestra-Historia article,
-.Sobre-Nosotros article{
+#Nuestra-Historia article,
+#Sobre-Nosotros article{
     flex: 2;
 }
 
-.Sobre-Nosotros div,
-.Nuestra-Historia div{
+#Sobre-Nosotros div,
+#Nuestra-Historia div{
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.Sobre-Nosotros img, 
-.Nuestra-Historia img{
+#Sobre-Nosotros img, 
+#Nuestra-Historia img{
     max-width: 300px;
     height: auto;
     box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
 
-.Equipo ol{
+#Sobre-Nosotros p,
+#Nuestra-Historia p{
+    text-align: justify;
+}
+
+#Equipo dl{
     display:flex;
     align-items: center;
     list-style: none;
     flex-wrap: wrap;
 
-}
-
-.Valores-Y-Compromisos article{
-    flex: 2;
-}
-
-.Valores-Y-Compromisos ul{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin-left: 140px;
-    margin-right: 140px;
-    margin-top: 60px;
-    margin-bottom: 20px;
 }
 
 ul {
@@ -159,6 +152,24 @@ ul {
 
 .Equipo img{
     max-width: 100%;
+}
+
+.equipo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.miembro{
+    text-align: center;
+}
+
+.rescatistas{
+    text-align: center;
+    margin-top: 1.5rem;
 }
 /* =========================
    Bootstrap Personalizado
