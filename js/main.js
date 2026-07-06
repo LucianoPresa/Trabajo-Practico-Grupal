@@ -15,12 +15,18 @@ botonModo.addEventListener("click", () => {
 // CONTADOR
 // =================
 let numero = 0;
-const contador = setInterval(() => {
+const span = document.getElementById("contador-rescates");
+function contador() {
+    if (span) {
+        setTimeout(sumadorContador,Math.random() * 2500)
+    }
+}
+function sumadorContador() {
     numero++;
-    const span = document.getElementById("contador-rescates");
-    span.textContent = numero;
-}, Math.random() * 5000);
-
+    span.textContent = numero    
+    contador()
+}
+contador()
 // =================
 // OCULTAR ELEMENTO
 // =================

@@ -230,9 +230,6 @@ ul {
 .nav-link:hover {
     color: var(--color-secundario) !important;
 }
-.navbar {
-    background-color: var(--color-fondo-secundario);
-}
 
 .card {
     border: 2px solid var(--color-secundario);
