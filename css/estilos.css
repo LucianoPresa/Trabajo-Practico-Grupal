@@ -135,6 +135,26 @@ flex-direction: row-reverse;
     text-align: justify;
 }
 
+@media (max-width: 768px) {
+    #Sobre-Nosotros,
+    #Nuestra-Historia{
+        flex-direction: column;
+    }
+
+    #Sobre-Nosotros article,
+    #Nuestra-Historia article,
+    #Sobre-Nosotros div,
+    #Nuestra-Historia div{
+        flex: none;
+        width: 100%;
+    }
+
+    #Sobre-Nosotros img,
+    #Nuestra-Historia img{
+        max-width: 100%;
+    }
+}
+
 #Valores-Y-Compromisos .card-title {
     text-align: center;
 }
